@@ -1,0 +1,63 @@
+#map {
+  position:absolute; 
+  top:0; 
+  bottom:0; 
+  width:100%;}
+
+#menubasemap {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            z-index: 1000;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+#pop-up
+.MypopupPR .mapboxgl-popup-content {
+  background: rgba(0, 0, 0, 0.75); /* Fond noir semi-transparent */
+  color: black;
+  border-radius: 10px; /* Coins arrondis */
+  padding: 10px 15px;
+  font-family: "Cinzel", serif;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre douce */
+  backdrop-filter: blur(5px); /* Effet de flou pour un look moderne */
+}
+
+/* Style de la flèche de la pop-up */
+.mapboxgl-popup-tip {
+  border-top-color: rgba(0, 0, 0, 0.75) !important; /* Assortie au fond */
+}
+
+
+.menu {
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            position: absolute;
+            width: 200px;
+            top: 40px;
+            left: 1180px;
+            padding: 0px;
+        }
+
+.menu .menu_overlay {
+            background-color: #fff;
+            box-shadow:0 1px 2px rgba(0, 0, 0, 0.10);
+            border-radius: 3px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+.menu_overlay fieldset {
+            border: none;
+            padding: 0;
+            margin: 0 0 10px;
+        }
+
+.menu_overlay .categoryLabel {
+            display: block;
+            font-weight: bold;
+            margin: 0 0 5px;
+        }

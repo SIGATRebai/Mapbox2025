@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mapbox_test</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+  
+<title>MaplibreGL</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+<script src="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@^5.1.1/dist/maplibre-gl.css" rel="stylesheet" />
+  
+<style>
+</style>
+  
+</head>
+  
+<body>
+<div id='map'></div>
+  <div class='menu'>
+    <div class='menu_overlay'>
+
+<hr>
+   <fieldset>
+   <label class="categoryLabel">Données Réferentielles</label>
+   
+     <div>
+      <input type="checkbox" id="RoutesCB" value="Routes" onchange="switchlayer('Routes')" checked/>
+                <label for="RoutesCB">Routes</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="HydroCB" value="Hydro" onchange="switchlayer('Hydro')" checked/>
+                <label for="HydroCB">Hydrologie</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ContourcommuneCB" value="Contourcommune" onchange="switchlayer('Contourcommune')" checked/>
+                <label for="ContourcommuneCB">Contour commune Rennes</label>
+            </div>
+        </fieldset>
+      
+      <hr>
+      
+        <fieldset>
+            <label class="categoryLabel">Données métier</label>
+            <div>
+                <input type="checkbox" id="batimentsCB" value="batiments" onchange="switchlayer('batiments')" />
+                <label for="batimentsCB">Bâtiments</label>
+            </div>
+            <div>
+                <input type="checkbox" id="CadastreCB" value="Cadastre" onchange="switchlayer('Cadastre')" />
+                <label for="CadastreCB">Parcelles cadastrales</label>
+            </div>
+            <div>
+                <input type="checkbox" id="EquipementsCB" value="Equipements" onchange="switchlayer('Equipements')" />
+                <label for="EquipementsCB">Équipements publics</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pubsCB" value="pubs" onchange="switchlayer('pubs')" />
+                <label for="pubsCB">Bars</label>
+            </div>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <label class="categoryLabel">Transports</label>
+            <div>
+                <input type="checkbox" id="ArretsCB" value="Arrets" onchange="switchlayer('Arrets')" />
+                <label for="ArretsCB">Arrêts</label>
+            </div>
+            <div>
+                <input type="checkbox" id="busCB" value="bus" onchange="switchlayer('bus')" />
+                <label for="busCB">Bus temps réel</label>
+            </div>
+            <div>
+                <input type="checkbox" id="metroCB" value="metro" onchange="switchlayer('metro')" />
+                <label for="metroCB">Métro</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ParcrelaisCB" value="Parcrelais" onchange="switchlayer('Parcrelais')" />
+                <label for="ParcrelaisCB">Parcs relais</label>
+            </div>
+            <div>
+                <input type="checkbox" id="vlsCB" value="vls" onchange="switchlayer('vls')" />
+                <label for="vlsCB">Stations Vélo Star</label>
+            </div>
+        </fieldset>
+    </div>
+</div>
+ <div id="menubasemap">
+   <label for="style-selector">Choisir un fond de carte :</label>
+   <select id="style-selector">
+       <option value="https://basemaps.cartocdn.com/gl/positron-gl-style/style.json">Light</option>
+       <option value="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json">Dark</option>
+       <option value="https://openmaptiles.geo.data.gouv.fr/styles/fiord-color/style.json">FiordColor</option>
+       <option value="https://data.geopf.fr/wms-r?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities">Satellite IGN</option>
+   </select>
+   <hr>
+   <div>
+    <button id='Gare'>Gare</button>
+    <button id='Rennes1'>Université Rennes 1</button>
+    <button id='Rennes2'>Université Rennes 2</button>
+   </div>
+</div>
+  
+</body>
+  
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
